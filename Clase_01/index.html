@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-sacale=1.0" />
+    <title>Bienvenido al lado oscuro</title>
+  </head>
+  <body>
+    <!-- Solo un H1 por página-->
+    <!-- crtl + k + c -->
+
+    <h1>Soy un H1 y soy el título más importante de la página</h1>
+    <h2>Esto es un H2</h2>
+    <h3>Esto es un H3</h3>
+    <h4>Esto es un H4</h4>
+    <h5>Esto es un H5</h5>
+    <h6>Esto es un H6</h6>
+
+    <p>Soy una etiqueta y dentro mío vas a colocar un parrafo</p>
+
+    <p>
+      Lorem, ipsum dolor sit amet <b> etiqueta</b> consectetur adipisicing elit.
+      Deleniti nulla aut mollitia eaque ipsa placeat quo itaque ducimus libero,
+      culpa quas obcaecati debitis fuga assumenda doloribus accusantium
+      possimus. Illo magnam dolorem id tenetur laboriosam ea fugit, asperiores
+      nostrum ut totam?
+    </p>
+
+    <p><strong>Soy un parrafo en negrita</strong></p>
+
+    <p>
+      Soy un parrafo que usa la etiqueta br <br />
+      para hacer el salto de linea
+      <b> a "br" la vamos a usar mientras sepamos SOLO HTML</b>
+    </p>
+
+    <!-- Enlaces a imagen -->
+    <!-- el target blank es para que te lo abra en una nueva pestaña -->
+
+    <a href="https://code.visualstudio.com/" target="_blank"> Soy un enlace</a>
+    <br />
+    <p>Clickeá la imagen</p>
+    <a href="https://code.visualstudio.com/" target="_blank">
+      <img
+        src="https://airelibreacebal.com.ar/wp-content/uploads/2021/06/2021031202544061e0e3f25c3041f849de6b510817fb34.jpg"
+        alt="imagen de messi"
+      />
+    </a>
+
+    <hr />
+
+    <!-- el Hr sirve solo para hcer lineas divisorias y la usamos solo cuando sepamos solo html -->
+
+    <p>pararfo a modo de ejemplo que queda separado por la linea del hr</p>
+
+    <h2>Lista desordenada (Unordered List)</h2>
+
+    <ul>
+      <li>elemento 1</li>
+      <li>elemento 2</li>
+      <li>elemento 3</li>
+    </ul>
+
+    <h2>Lista Ordenada</h2>
+
+    <ol>
+      <li>elemento 1</li>
+      <li>elemento 2</li>
+      <li>elemento 3</li>
+    </ol>
+
+    <h2>Listas Anidadas</h2>
+
+    <ol>
+      <li>
+        Soy un elemento de una lista ordenada adentro tengo otra lista
+        <ul>
+          <li>elemento 1</li>
+          <li>elemento 2</li>
+          <li>elemento 3</li>
+        </ul>
+      </li>
+      <li>
+        soy otro elemento de la lista ordenada y adentro tengo otra lista más
+        <ul>
+          <li>yo tambien tengo una lista adentro</li>
+          <ol>
+            <li>elemento 1</li>
+            <li>elemento 2</li>
+          </ol>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Tablas</h2>
+
+    <table>
+      <tr>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+      <tr>
+        <td>9hs</td>
+        <td>8 hs</td>
+        <td>7hs</td>
+        <td>6hs</td>
+        <td>5hs</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Formularios</h2>
+    <!-- imput de tipo text -->
+
+    <label for="nombre"> Nombre</label>
+    <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+    <br />
+    <br />
+
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" placeholder="Ingrese su apellido" />
+
+    <br /><br />
+    <!-- IMPORTANTE: la etiqueta input va acompañada siempre de una etiqueta label y el for del label siempre coincide con el id del imput -->
+
+    <!-- Imput de tipo "number!" -->
+
+    <label for="edad"> Edad</label>
+    <input type="number" id="edad" placeholder="Ingrese su edad" />
+    <br /><br />
+    <!--  input de tipo email -->
+
+    <label for="correo">Email</label>
+    <input type="email" id="correo" placeholder="Ingrese su mail" />
+    <br /><br />
+
+    <!-- Imput de tipo pasword -->
+
+    <label for="pass">Contraseña</label>
+    <input
+      type="password"
+      id="pass"
+      placeholder="Ingrese su contraseña"
+      required
+    />
+    <br /><br />
+
+    <!-- input de tipo checkbox -->
+
+    <label for="checkbox1">Soy un imput de tipo checkbox</label>
+    <input type="checkbox" id="checkox1" />
+    <br /><br />
+
+    <label for="checkbox2">Soy un imput de tipo checkbox</label>
+    <input type="checkbox" id="checkox2" checked />
+    <br /><br />
+    <!-- input de tipo radio -->
+
+    <span>Gusto de helado favorito</span>
+    <!-- un span es un centenedor y listo,no tiene significado semántico -->
+
+    <input type="radio" id="chocolate" name="gustos" />
+    <label for="chocolate">Chocolate</label>
+
+    <input type="radio" id="dulce de leche" name="gustos" />
+    <label for="dulce de leche">Dulce de leche</label>
+
+    <input type="radio" id="menta granizada" name="gustos" />
+    <label for="menta granizada">Menta granizada</label>
+
+    <input type="radio" id="ninguno" name="gustos" />
+    <label for="ninguno">Ninguno</label>
+    <br /><br />
+
+    <!-- todos los imput radio que tengan el mismo name van a compartir logica entre  ellos
+      no te clikeado entre todos en este caso, con name diferentes podes elegir varios gustos en este caso -->
+
+    <!-- Select: no es un input -->
+
+    ¿Jugamos?
+    <select>
+      <option value="piedra">Piedra</option>
+      <option value="papel">Papel</option>
+      <option value="tijera">Tijera</option>
+    </select>
+
+    <br /><br />
+
+    <!-- "Etiqueta textarea" espacios para dejar comentarios, se puede ajustar su tamaño en cols (columnas o rows (filas)) -->
+    <label for="texto">Soy un area de texto</label> <br />
+    <textarea name="" id="texto" cols="30" rows="10"></textarea>
+
+    <br /><br />
+
+    <!-- Botones: cuando a un input le pones "type="submit" es un boton -->
+
+    <input type="submit" value="Soy un botón" />
+
+    <button>Soy un botón</button>
+    <!-- si ese input type submit esta dentro de un "form"(es un contenedor) lo que hace es enviar toda la data que esta dentro a la base de datos -->
+  </body>
+</html>
